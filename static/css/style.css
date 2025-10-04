@@ -1,0 +1,46 @@
+:root {
+  --lg-primary: #0d6efd;
+  --lg-bg: #f8f9fa;
+  --lg-text: #212529;
+}
+
+body {
+  background: var(--lg-bg);
+  color: var(--lg-text);
+}
+
+/* Media preview and capture */
+#video, #canvas {
+  width: 100%;
+  max-width: 560px;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 10px auto;
+  display: block;
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.08);
+  background: #000;
+}
+
+#photo {
+  max-width: 360px;
+  margin-top: 10px;
+  border-radius: 0.5rem;
+}
+
+/* Gallery cards */
+.card.shadow-sm {
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.card.shadow-sm:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Buttons and layout helpers */
+.btn-wide {
+  min-width: 160px;
+}
